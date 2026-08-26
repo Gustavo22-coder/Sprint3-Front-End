@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
 /* CONFIGURAÇÕES */
 * {
     margin: 0;
@@ -10,7 +12,7 @@ html {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
 
     background: #0b1120;
 
@@ -27,13 +29,15 @@ a {
 /* MENU */
 
 header {
-    background: #111827;
-
-    border-bottom: 1px solid #1e3a5f;
-
+   background: rgba(17, 24, 39, 0.7);
+    /* Fundo semi-transparente */
+    backdrop-filter: blur(12px);
+    /* O efeito de vidro embaçado */
+    -webkit-backdrop-filter: blur(12px);
+    /* Suporte para Safari */
+    border-bottom: 1px solid rgba(30, 58, 95, 0.5);
     position: sticky;
     top: 0;
-
     z-index: 10;
 }
 
@@ -121,10 +125,16 @@ h1 span {
     border-radius: 6px;
 
     font-weight: bold;
+
+    box-shadow: 0 4px 15px rgba(33, 150, 243, 0.3);
+    
+    transition: all 0.3s ease;
 }
 
 .botao:hover {
     background: #1976d2;
+    box-shadow: 0 6px 20px rgba(33, 150, 243, 0.5);
+    transform: translateY(-2px);
 }
 
 /* CELULAR */
